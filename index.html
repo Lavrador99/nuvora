@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Apaga</title>
+<meta name="description" content="Programas guiados para noites mais tranquilas, em português de Portugal.">
+<meta name="theme-color" content="#0d1017">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Apaga">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap" id="app" aria-live="polite"></div>
+
+<div class="night" id="night" hidden>
+  <div class="orb" id="n-orb" aria-hidden="true"></div>
+  <p class="word" id="n-word" hidden></p>
+  <p class="phase" id="n-phase"></p>
+  <p class="hint">Toca uma vez para pausar · duas vezes para sair</p>
+</div>
+
+<div class="sheet-bg" id="sheet-bg" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></div>
+
+<script src="config.js"></script>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
